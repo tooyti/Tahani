@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBECF3"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="32dp"
+        android:onClick="goBackMainActivty2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adopt2"
+        app:srcCompat="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="181dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/adopt"
+        android:layout_width="184dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FDBFD4"
+        android:fontFamily="@font/allan"
+        android:onClick="adoptBtn"
+        android:text="Adopt"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clinck" />
+
+    <Button
+        android:id="@+id/adopt2"
+        android:layout_width="184dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FDBFD4"
+        android:fontFamily="@font/allan"
+        android:text="Search"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adopt" />
+
+    <Button
+        android:id="@+id/clinck"
+        android:layout_width="178dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FDBFD4"
+        android:fontFamily="@font/allan"
+        android:onClick="clinckBtn"
+        android:text="Clinck"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
